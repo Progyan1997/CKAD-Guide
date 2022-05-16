@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-1.2-burstable
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+      imagePullPolicy: Always
+      ports:
+      - containerPort: 80
+      resources:
+        limits:
+          memory: 128Mi
