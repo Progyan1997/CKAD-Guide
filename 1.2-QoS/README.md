@@ -1,6 +1,8 @@
-# Pod
+# Quality of Services
 
-## Burstable Quality
+A metadata in Pod resource that implies how confident Kubernetes is about stability and performance of the application within it.
+
+## Burstable
 ### Commands
 
 - Create Pod in our Kubernetes Cluster by executing the following:
@@ -31,7 +33,7 @@ QoS Class:                   Burstable
 
 This is because we did not specify how much CPU resource is needed for this Pod despite mentioning a memory limit and hence Kubernetes pro-actively decides what is best for it and can evict if required.
 
-## Guaranteed Quality
+## Guaranteed
 ### Commands
 
 - Create Pod in our Kubernetes Cluster by executing the following:
