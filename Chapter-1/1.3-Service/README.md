@@ -8,7 +8,7 @@ Cluster IP is the default way of creating a service. This creates a Static IP en
 
   - Run the following command to create respective Pod and Service:
   ```sh
-  $ kubectl create -f 1.3-Service/1.3-ClusterIP.yml
+  $ kubectl create -f 1.3-ClusterIP.yml
   ```
 
   - Validate if they have been created:
@@ -17,7 +17,7 @@ Cluster IP is the default way of creating a service. This creates a Static IP en
   NAME      READY   STATUS    RESTARTS   AGE
   app-1.3   1/1     Running   0          21s
 
-  $ kubectl get svc
+  $ kubectl get services
   NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
   ip-service   ClusterIP   10.107.178.137   <none>        80/TCP    3s
   kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP   3d13h
@@ -61,7 +61,7 @@ Cluster IP might not always solve the problem. Sometime it might be required to 
 
   - Run the following command to create respective Pod and Service:
   ```sh
-  $ kubectl create -f 1.3-Service/1.3-NodePort.yml
+  $ kubectl create -f 1.3-NodePort.yml
   ```
 
   - Validate if they have been created:
@@ -70,7 +70,7 @@ Cluster IP might not always solve the problem. Sometime it might be required to 
   NAME      READY   STATUS    RESTARTS   AGE
   app-1.3   1/1     Running   0          16s
 
-  $ kubectl get svc
+  $ kubectl get services
   NAME           TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
   kubernetes     ClusterIP   10.96.0.1       <none>        443/TCP        3d13h
   node-service   NodePort    10.108.179.34   <none>        80:31945/TCP   51s

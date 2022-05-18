@@ -11,7 +11,7 @@ $ kubectl create ns app-ns
 ## Create Resources in a Namespace
 
 ```sh
-$ kubectl create -f 1.4-Namespace/1.4-Namespace.yml -n app-ns
+$ kubectl create -f 1.4-Namespace.yml -n app-ns
 ```
 
 ## View Resources in a Namespace
@@ -19,7 +19,7 @@ $ kubectl create -f 1.4-Namespace/1.4-Namespace.yml -n app-ns
 ### Pod
 
 ```sh
-$ kubectl get pods -n app-ns
+$ kubectl get po -n app-ns
 ```
 
 ### Service
