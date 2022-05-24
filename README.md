@@ -15,4 +15,4 @@ Chapter 1 contains very basic understanding of concepts about resources in Kuber
  - [1.3 Service](./Chapter-1/1.3-Service/)
  - [1.4 Namespace](./Chapter-1/1.4-Namespace/)
  - [1.5 Deployment](./Chapter-1/1.5-Deployment/)
- - [1.6 Probe](./Chapter-1/1.5-Probe/)
+ - [1.6 Probe](./Chapter-1/1.6-Probe/)
