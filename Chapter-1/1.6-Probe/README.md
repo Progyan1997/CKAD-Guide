@@ -1,6 +1,6 @@
-# Deployment
+# Probe
 
-Provides a declarative resource to manage Pods and Replicas, instead of imperatively operating on them.
+Validates where a Pod is Healthy and Ready to take Network Requests.
 
 ## Setup a Namespace
 
@@ -12,7 +12,7 @@ namespace/app-ns created
 ## Create Resouces
 
 ```sh
-$ kubectl create -f 1.5-Deployment.yml -n app-ns
+$ kubectl create -f 1.6-Probe.yml -n app-ns
 deployment.apps/app-deployment created
 service/app-service created
 ```
@@ -52,7 +52,7 @@ Name:                     app-service
 Namespace:                app-ns
 Labels:                   <none>
 Annotations:              <none>
-Selector:                 app=app-1.5
+Selector:                 app=app-1.6
 Type:                     NodePort
 IP Family Policy:         SingleStack
 IP Families:              IPv4
@@ -98,21 +98,4 @@ Commercial support is available at
 <p><em>Thank you for using nginx.</em></p>
 </body>
 </html>
-```
-
-## Bonus: Scale Down Replicas
-
-### Declare Replica Count to be 1
-
-```sh
-$ kubectl scale --replicas=1 -n app-ns deployment/app-deployment
-deployment.apps/app-deployment scaled
-```
-
-### Validate Pods
-
-```sh
-$ kubectl get po -n app-ns
-NAME                              READY   STATUS    RESTARTS   AGE
-app-deployment-598fbd58c8-pmtdp   1/1     Running   0          15m
 ```

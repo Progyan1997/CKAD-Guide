@@ -13,5 +13,6 @@ Chapter 1 contains very basic understanding of concepts about resources in Kuber
  - [1.1 Pod](./Chapter-1/1.1-Pod/)
  - [1.2 Quality of Service](./Chapter-1/1.2-QoS/)
  - [1.3 Service](./Chapter-1/1.3-Service/)
- - [1.1 Namespace](./Chapter-1/1.4-Namespace/)
- - [1.1 Deployment](./Chapter-1/1.5-Deployment/)
+ - [1.4 Namespace](./Chapter-1/1.4-Namespace/)
+ - [1.5 Deployment](./Chapter-1/1.5-Deployment/)
+ - [1.6 Probe](./Chapter-1/1.5-Probe/)
